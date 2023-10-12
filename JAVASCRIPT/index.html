@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            width: max-content;
+            transition: all 0.8s;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- <h1 class="head">Hello world</h1>
+    <h1 class="x"></h1>
+    <h1 class="y"></h1> -->
+
+    <button id="btn">
+        Click me
+    </button>
+
+
+
+
+    <script>
+        // let maths = 90;
+        // let english = 80;
+        // let computer = 95;
+        // let total = 300;
+        // let grade;
+        // let result;
+        // let obt = math + english + computer;
+        // let per = ((obt / total) * 100).toFixed(2);
+        // if (ObtainedMarks >= 90) {
+        //     grade = 'A'
+        // } else if (ObtainedMarks >= 70) {
+
+        //     grade = 'B'
+        // } else if (ObtainedMarks >= 60) {
+        //     grade = 'C'
+
+        // }
+        // else if(ObtainedMarks >=55){
+        //     grade = 'D'
+        // }
+        // else{
+        //     grade= 'E'
+        // }
+        // if(maths >=50 && english >=50 && computer >=50){
+        //     result='Pass'
+        // }
+        // else{
+        //     result='Fail'
+        // }
+        // console.log("maths:" + maths)
+        // console.log("english:" + english)
+        // console.log("computer:" + computer)
+
+        // console.log(`per is ${per}=${maths+english+computer}`)
+
+
+
+
+        // Define the student's name and marks
+        // let studentName = "Hussain";
+        // let mathMarks = 85;
+        // let scienceMarks = 95;
+        // let englishMarks = 83;
+        // let totalMarks = 300;
+
+        // let grade = ["A", "B", "C", "D", "E"];
+        // let result;
+
+        // // Calculate the obtained marks
+        // let ObtainedMarks = mathMarks + scienceMarks + englishMarks;
+
+        // // Calculate the percentage
+        // let percentage = (ObtainedMarks / totalMarks) * 100;
+
+        // console.log("Student Name: " + studentName);
+        // console.log("Mathematics Marks: " + mathMarks);
+        // console.log("Science Marks: " + scienceMarks);
+        // console.log("English Marks: " + englishMarks);
+        // console.log("Obtained Marks: " + ObtainedMarks);
+        // console.log("Percentage: " + percentage.toFixed(2) + "%");
+
+        // function grade(ObtainedMarks) {
+        //     if (ObtainedMarks >= 90) {
+
+        //         console.log(`student passed with ${per}%`)
+        //         console.log(`Grade :A`)
+        //     } else if (ObtainedMarks >= 70) {
+        //         console.log(`student passed with ${per}%`)
+        //         console.log(`Grade :B`)
+
+        //     } else if (ObtainedMarks >= 60) {
+
+        //         console.log(`student passed with ${per}%`)
+        //         console.log(`Grade :C`)
+        //     } else {
+        //          console.log(`student passed with ${per}%`)
+        //         console.log(`Grade :E`)
+        //     }
+        //     if (maths >= 50 && english >= 50 && computer >= 50) {
+        //         result = 'Pass'
+
+        //     } else {
+        //         result = 'Fail'
+        //     }
+        // }
+
+
+        //loop - reptitation/intertion
+        // for(let i=0; i<10;i++)
+        // {
+        //     console.log(`2x${i+1}=${2*(i)}`)
+        // }
+
+
+
+        //     let i=0;
+        //     while(i<=10){
+        // console.log(`3x${i+1}=${3*(i)}`)
+        //         i++
+        //     }
+
+        //     do()
+        //     {
+        //         console.log('hello')
+        //     }
+        //     while(i>2)
+        // const student = () => {
+        //     console.log('hello')
+        //     console.log('hello')
+        //     console.log('hello')
+        //     document.write('hello from student')
+        //     document.write('hello from student')
+
+        // }
+        // student()
+        // let b = document.getElementById('btn')
+        // console.log(b.innerText)
+        // let heading = document.getElementsByClassName('head')[2]
+        // console.log(heading.innerText)
+
+
+
+
+        // let h=document.querySelector('.head');
+        // let btn =document.querySelector('#btn')
+
+        // btn.addEventListener('click',()=>{
+        //    if(h.innerHTML='hello world'){
+        //     h.innerHTML='hello New world!!'
+        //    }
+        //    else{
+        //     h.innerHTML='hello world'
+        //    }
+        // })
+        // let h=document.querySelector('.head');
+        // let btn =document.querySelector('#btn')
+        // let xCord = document.querySelector('.x')
+        // let yCord = document.querySelector('.y')
+        // window.addEventListener('click',(f)=>{
+        //     //    if(h.innerHTML='hello world'){
+        //     //     h.innerHTML='hello New world!!'
+        //     //    }
+        //     //    else{
+        //     //     h.innerHTML='hello world'
+        //     //    }
+        //     xCord.innerHTML= `${f.clientX}px`
+        //     yCord.innerHTML= `${f.clientY}px`
+
+        //     })
+
+        // btn.addEventListener('click',()=>{
+        //     h.style.color ='red'
+        //     h.style.transform='translateX(400px)'
+        //     h.style.backgroundColor='blue'
+
+        // })
+        let body = document.body;
+        let btn = document.querySelector('#btn')
+        let colors = ['red', 'yellow', 'orange','magenta', 'green', 'gray']
+        let count = 0;
+        window.addEventListener('mouseover', () => {
+            body.style.background = colors[count]
+            count++;
+            if (count > colors.length - 1){
+                count=0;
+            }
+
+        })
+    </script>
+</body>
+
+</html>
